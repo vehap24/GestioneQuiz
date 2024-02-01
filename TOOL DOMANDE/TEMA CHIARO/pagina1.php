@@ -9,7 +9,7 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div style="font-family: Helvetica, Sans-Serif;">
         <form method="POST" action="pagina2.php">
         Domanda: <input type="text" name="domanda" style="width:600px";><br>
         Risposta A: <input type=text name=risposta_a><br>

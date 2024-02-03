@@ -1,14 +1,15 @@
 <?php
 function random(){
     srand();
-    $array[];
-    dowhile(sizeof($array)==10){
-        $filePath = "Domande.csv"; 
+    $filePath = "Domande.csv";
+    $array = [];
+    do {
         $numero_casuale = rand(1, count(file($filePath)));
-        for($i = 0; $i<sizeof($array); $i++){
-            if($array[$i] != $numero_casuale)
+        if (!in_array($numero_casuale, $array)) {
             $array[] = $numero_casuale;
         }
-    }
+    } while (sizeof($array) < 10);
+
+    var_dump($array);
 }
 ?>

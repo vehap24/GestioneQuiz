@@ -10,6 +10,6 @@ function random(){
         }
     } while (sizeof($array) < 10);
 
-    var_dump($array);
+    //var_dump($array);
 }
 ?>

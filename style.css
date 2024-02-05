@@ -1,4 +1,4 @@
-@font-face { font-family: "Germanica"; src: url('/fonts/GermaniaOne-Regular.ttf'); }
+@font-face { font-family: "Germanica"; src: url('GermaniaOne-Regular.ttf'); }
 .bottoneHome{
     font-family: "Germanica";
     font-size: 40px;

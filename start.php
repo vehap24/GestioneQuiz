@@ -15,7 +15,6 @@
     <form action="gioca.php" class="text-center" style="margin-top:100px" method="POST">
         <p class="text-light" style="font-size:100px">SEI PRONTO AD AVVIARE LA PARTITA???</p>
         <input type="submit" class="bottoneHome" value="YEAHHHH LET'S GOOOO!!!!!">
-        <?php include('funzioni.php'); random();?>
     </form>
 </body>
 </html>

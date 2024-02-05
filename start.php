@@ -1,3 +1,7 @@
+<?php
+include('funzioni.php');
+random();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

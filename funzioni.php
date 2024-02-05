@@ -1,9 +1,12 @@
 <?php
 session_start();
 if($_SESSION["risposta"] == null)
-$_SESSION["risposta"] = $risposte = [];
-if($_SESSION["indice"] == null)
-$_SESSION["indice"] = 0;
+    $_SESSION["risposta"] = $risposte = [];
+if($_SESSION["indice"] == null){
+    $x = 0;
+    $_SESSION["indice"] = $x;
+}
+
 
 function random(){
     srand();

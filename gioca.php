@@ -19,7 +19,7 @@ var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
 <body>
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jpg"> 
-        <form id="FORM" action="GET">
+        <form id="FORM" method="GET" action="funzioni.php">
             <div class="text-center text-light">
                 <?php
                     echo $temp_array[0];
@@ -43,6 +43,9 @@ var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
                 <div class="col">
                     <input class="btn-check" type="radio" id="4" name="risposta_data" value="4">
                     <label class="btn btn-outline-secondary" for="4"><?php echo $temp_array[4];?></label>
+                </div>
+                <div>
+                    <input type="submit" value="Rispondi">
                 </div>
             </div>
         </form>

@@ -7,6 +7,7 @@ if($_SESSION["indice"] == null){
     $_SESSION["indice"] = $x;
 }
 
+tieni_traccia($_POST["risposta_data"]);
 
 function random(){
     srand();

@@ -20,39 +20,29 @@ var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jpg"> 
         <form id="FORM" action="GET">
+            <div class="text-center text-light">
+                <?php
+                    echo $temp_array[0];
+                ?>
+            </div>
             <div class="row">
-                    <?php
-                        echo $temp_array[0];
-                    ?>
                 <div class="col">
-                    <?php
-                        echo $temp_array[1];
-                    ?>
                     <input class="btn-check" type="radio" id="1" name="risposta_data" value="1">
-                    <label class="btn btn-outline-secondary" for="1">HTML</label>
+                    <label class="btn btn-outline-secondary" for="1"><?php echo $temp_array[1];?></label>
                 </div>
                 <div class="col">
-                    <?php
-                        echo $temp_array[2];
-                    ?>
                     <input class="btn-check" type="radio" id="2" name="risposta_data" value="2"> 
-                    <label class="btn btn-outline-secondary" for="2">HTML</label>
+                    <label class="btn btn-outline-secondary" for="2"><?php echo $temp_array[2];?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <?php
-                        echo $temp_array[3];
-                    ?>
                     <input class="btn-check" type="radio" id="3" name="risposta_data" value="3">
-                    <label class="btn btn-outline-secondary" for="3">HTML</label>
+                    <label class="btn btn-outline-secondary" for="3"><?php echo $temp_array[3];?></label>
                 </div>
                 <div class="col">
-                    <?php
-                        echo $temp_array[4];
-                    ?>
                     <input class="btn-check" type="radio" id="4" name="risposta_data" value="4">
-                    <label class="btn btn-outline-secondary" for="4">HTML</label>
+                    <label class="btn btn-outline-secondary" for="4"><?php echo $temp_array[4];?></label>
                 </div>
             </div>
         </form>

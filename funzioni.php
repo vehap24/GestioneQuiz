@@ -28,5 +28,6 @@ function tieni_traccia($risposta_data){
     $_SESSION["indice"] += 1;
     return $_SESSION["risposta"];
     return $_SESSION["indice"];
+    header('gioca.php');
 }
 ?>

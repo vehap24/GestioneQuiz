@@ -13,7 +13,7 @@ include('funzioni.php');
 $domanda = file('Domande.csv');
 $numero_domanda = $_SESSION["ArrayDomande"];
 $indice = $_SESSION["indice"];
-$temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);
+$temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
 var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
 ?>
 <body>

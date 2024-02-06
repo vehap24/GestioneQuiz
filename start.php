@@ -9,7 +9,7 @@ function random(){
         if (!in_array($numero_casuale, $array)) {
             $array[] = $numero_casuale;
         }
-    } while (sizeof($array) < 10);
+    } while (sizeof($array) < 20);
     $_SESSION['ArrayDomande'] = $array;
     $_SESSION['indice']=0;
     $_SESSION["risposta"] = null;

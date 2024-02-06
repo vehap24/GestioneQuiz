@@ -14,7 +14,7 @@ $domanda = file('Domande.csv');
 $numero_domanda = $_SESSION["ArrayDomande"];
 $indice = $_SESSION["indice"];
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
-if($indice == 10)
+if($indice == 20)
 header("Location:Risultati.php");
 var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
 var_dump($indice);

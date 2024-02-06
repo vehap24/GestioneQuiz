@@ -7,7 +7,7 @@ echo "<br>";
 echo "<br>";
 $numero_domanda = $_SESSION["ArrayDomande"];
 $domanda = file('Domande.csv');
-for($i = 0; $i < 10; $i++){
+for($i = 0; $i < 20; $i++){
     $temp_array = explode('|',$domanda[$numero_domanda[$i]-1]);
     echo $temp_array[0];
     echo "<br>";
@@ -28,5 +28,5 @@ for($i = 0; $i < 10; $i++){
     }
 }
 echo $risposte_corrette;
-echo "/10 risposte corrette";
+echo "/20 risposte corrette";
 ?>

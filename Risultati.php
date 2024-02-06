@@ -1,5 +1,6 @@
 <?php
 session_start();
+$risposte_corrette = 0;
 var_dump($_SESSION["risposta"]);
 echo "<br>";
 //var_dump($_SESSION["ArrayDomande"]);
@@ -14,6 +15,7 @@ for($i = 0; $i < 10; $i++){
         echo "Risposta data e corretta: ";
         echo $temp_array[intval($temp_array[5])];
         echo "<br><br>";
+        $risposte_corrette++;
         //echo "Bravo!!!<br>";
     } else {
         echo "Risposta data: ";
@@ -25,5 +27,6 @@ for($i = 0; $i < 10; $i++){
         //echo "NOOOOOOO!!!<br>";
     }
 }
-
+echo $risposte_corrette;
+echo "/10 risposte corrette";
 ?>

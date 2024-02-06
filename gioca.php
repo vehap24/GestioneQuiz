@@ -21,6 +21,9 @@ var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
         <img style="height: 7%; width: 7%" src="logo.jpg"> 
         <form id="FORM" action="GET">
             <div class="row">
+                    <?php
+                        echo $temp_array[0];
+                    ?>
                 <div class="col">
                     <?php
                         echo $temp_array[1];

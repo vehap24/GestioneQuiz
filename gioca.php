@@ -9,17 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <?php
-include('funzioni.php');
+session_start();
 $domanda = file('Domande.csv');
 $numero_domanda = $_SESSION["ArrayDomande"];
 $indice = $_SESSION["indice"];
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
+if($indice == 10)
+header("Location:_pagina.php");
 var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
+var_dump($indice);
 ?>
 <body>
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jpg"> 
-        <form id="FORM" method="GET" action="funzioni.php">
+        <form id="FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <div class="text-center text-light">
                 <?php
                     echo $temp_array[0];
@@ -53,3 +56,13 @@ var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
     
 </body>
 </html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $risposte[] = $risposta_data;
+    $_SESSION["risposta"] = $risposte; 
+    $_SESSION["indice"] += 1;
+    return $_SESSION["risposta"];
+    return $_SESSION["indice"];
+    var_dump($_SESSION["risposta"]);
+}
+?>

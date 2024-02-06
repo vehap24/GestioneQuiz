@@ -1,5 +1,5 @@
 <?php
 include('funzioni.php');
-random();
-var_dump($_SESSION["indice"]);
+var_dump($_SESSION["risposta"]);
+echo"CIAO LORIS";
 ?>

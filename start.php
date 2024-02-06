@@ -12,6 +12,7 @@ function random(){
     } while (sizeof($array) < 10);
     $_SESSION['ArrayDomande'] = $array;
     $_SESSION['indice']=0;
+    $_SESSION["risposta"] = null;
     //var_dump($array);
 }
 random();

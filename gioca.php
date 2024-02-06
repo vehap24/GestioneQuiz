@@ -15,7 +15,7 @@ $numero_domanda = $_SESSION["ArrayDomande"];
 $indice = $_SESSION["indice"];
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
 if($indice == 3)
-header("Location:_pagina.php");
+header("Location:Risultati.php");
 var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
 var_dump($indice);
 ?>

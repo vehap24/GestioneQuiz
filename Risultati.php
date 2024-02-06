@@ -29,71 +29,70 @@ for($i = 0; $i < 20; $i++){
 }
 echo $risposte_corrette;
 echo "/20 risposte corrette";
-
+echo "<br>";
 switch($risposte_corrette){
 case 0:
-    echo "immagine_1";
+    echo "<img src='immagine_1.jpg'>";
     break;
 case 1:
-    echo "immagine_2";
+    echo "<img src='immagine_2.jpg'>";
     break;
 case 2:
-    echo "immagine_3";
+    echo "<img src='immagine_3.jpg'>";
     break;
 case 3:
-    echo "immagine_4";
+    echo "<img src='immagine_4.jpg'>";
     break;
 case 4:
-    echo "immagine_5";
+    echo "<img src='immagine_5.jpg'>";
     break;
 case 5:
-    echo "immagine_6";
+    echo "<img src='immagine_6.jpg'>";
     break;
 case 6:
-    echo "immagine_7";
+    echo "<img src='immagine_7.jpg'>";
     break;
 case 7:
-    echo "immagine_8";
+    echo "<img src='immagine_8.jpg'>";
     break;
 case 8:
-    echo "immagine_9";
+    echo "<img src='immagine_9.jpg'>";
     break;
 case 9:
-    echo "immagine_10";
+    echo "<img src='immagine_10.jpg'>";
     break;
 case 10:
-    echo "immagine_11";
+    echo "<img src='immagine_11.jpg'>";
     break;
 case 11:
-    echo "immagine_12";
+    echo "<img src='immagine_12.jpg'>";
     break;
 case 12:
-    echo "immagine_13";
+    echo "<img src='immagine_13.jpg'>";
     break;
 case 13:
-    echo "immagine_14";
+    echo "<img src='immagine_14.jpg'>";
     break;
 case 14:
-    echo "immagine_15";
+    echo "<img src='immagine_15.jpg'>";
     break;
 case 15:
-    echo "immagine_16";
+    echo "<img src='immagine_16.jpg'>";
     break;
 case 16:
-    echo "immagine_17";
+    echo "<img src='immagine_17.jpg'>";
     break;
 case 17:
-    echo "immagine_18";
+    echo "<img src='immagine_18.jpg'>";
     break;
 case 18:
-    echo "immagine_19";
+    echo "<img src='immagine_19.jpg'>";
     break;
 case 19:
-    echo "immagine_20";
+    echo "<img src='immagine_20.jpg'>";
     break;
 case 20:
-    echo "immagine_21";
+    echo "<img src='immagine_21.jpg'>";
     break;
-
 }
 ?>

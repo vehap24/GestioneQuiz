@@ -14,12 +14,12 @@
         <h1 class="text-center text-light">RIEPILOGO DOMANDE E RISPOSTE</h1>
         <?php
             session_start();
-            $risposte_corrette = 0;
-            $numero_domanda = $_SESSION["ArrayDomande"];
-            $domanda = file('Domande.csv');
-            for($i = 0; $i < 20; $i++){
-                $temp_array = explode('|',$domanda[$numero_domanda[$i]-1]);
-                if($_SESSION["risposta"][$i] == $temp_array[5]){
+            $risposte_corrette = 0;     //Inizializzazione variabile
+            $numero_domanda = $_SESSION["ArrayDomande"];        //Recupero domande dalla sessione
+            $domanda = file('Domande.csv');     //Metter file in variabile
+            for($i = 0; $i < 20; $i++){     //Inizia una stampa
+                $temp_array = explode('|',$domanda[$numero_domanda[$i]-1]);     //Divide l'array
+                if($_SESSION["risposta"][$i] == $temp_array[5]){        //Si mette al confronto il valore della risosta dell'utente e la risposta esatta segnata nel file
                     printf("<div class='card text-bg-success mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
                     echo "<div class='card-body>' <p class='card-text'> <b>Risposta data e corretta:</b> ";
                     printf($temp_array[intval($temp_array[5])] . "</p></div></div>");

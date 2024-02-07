@@ -10,11 +10,11 @@
 </head>
 <?php
 session_start();
-$domanda = file('Domande.csv');
-$numero_domanda = $_SESSION["ArrayDomande"];
-$indice = $_SESSION["indice"];
-$temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
-if($indice == 20)
+$domanda = file('Domande.csv');     //Caricare file in variabile
+$numero_domanda = $_SESSION["ArrayDomande"];        //Le variabili contenute nella sessioni vengono caricate in una variabile locale
+$indice = $_SESSION["indice"];                      //La variabile contatore viene carivata in una variabile locale
+$temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividiamo la riga con explode, $domanda è il file, dentro $numero_domanda ci sono 20 numeri che rappresentano il numero della domanda che vanno da 1 a MAX_RIGHE_FILE, per accedere al numero di domanda che si vuole far visualizzare, usiamo la variabile $indice, che incrementa ogni volta che si fa il submit della risposta. Ovviamente bisogna fare -1 perchè stiamo lavorando con un array
+if($indice == 20)                                                       //Per concludere il quiz
 header("Location:Risultati.php");
 //var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
 //var_dump($indice);    //DEBUG!!!
@@ -57,12 +57,12 @@ header("Location:Risultati.php");
 </body>
 </html>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    if (isset($_POST["risposta_data"])){
-    $_SESSION["risposte"] = $_POST["risposta_data"];
-    $_SESSION["risposta"][$_SESSION["indice"]-1] = $_SESSION["risposte"];
+if ($_SERVER["REQUEST_METHOD"] == "POST"){      //Appena si preme il submit, il server si richiama da solo, richiamando la funzione
+    if (isset($_POST["risposta_data"])){        //Se la variabile $risposta_data è settata, allora vero. Evitiamo il warning della variabile non inizializzata
+    //$_SESSION["risposte"] = $_POST["risposta_data"];   //Vecchio codice
+    $_SESSION["risposta"][$_SESSION["indice"]-1] = $_POST["risposta_data"]; //Dal post salviamo la risposta nell'array della sessione
     }
-    $_SESSION["indice"] += 1;
+    $_SESSION["indice"] += 1;       //Incremento indice
     //var_dump($_SESSION["risposta"]);    //DEBUG!!!
 }
 ?>

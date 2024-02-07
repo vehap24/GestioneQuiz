@@ -56,7 +56,7 @@
                 echo "<img src='immagine_5.jpg'>";
                 break;
             case 5:
-                echo "<br>Frase 6<br>";
+                echo "<br>[INSERIRE TESTO QUI]]<br>";
                 echo "<img src='immagine_6.jpg'>";
                 break;
             case 6:
@@ -64,7 +64,7 @@
                 echo "<img src='immagine_7.jpg'>";
                 break;
             case 7:
-                echo "<br>Frase 8<br>";
+                echo "<br>Continua con la tua vita...<br>";
                 echo "<img src='immagine_8.jpg'>";
                 break;
             case 8:

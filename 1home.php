@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container text-center">
-        <img style="height: 30%; width: 30%" class="img img-fluid py-4" src="logo.jpg"> <br>
+        <img style="height: 30%; width: 30%" class="img img-fluid py-4" src="logo.jfif"> <br>
         <div>
             <button class="bottoneHome" onclick="window.location.href = 'start.php'">GIOCA</button>
             <button class="bottoneHome" onclick="window.location.href = 'crediti.html'">CREDITI</button>

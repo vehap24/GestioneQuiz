@@ -1,19 +1,19 @@
 <?php
 session_start();
 function random(){
-    srand();
-    $filePath = "Domande.csv";
-    $array = [];
+    srand();    //Nuovo seme
+    $filePath = "Domande.csv";  //File assegnato a variabile
+    $array = [];    //Iniziallizzazione di un array temporaneo
     do {
-        $numero_casuale = rand(1, count(file($filePath)));
-        if (!in_array($numero_casuale, $array)) {
-            $array[] = $numero_casuale;
+        $numero_casuale = rand(1, count(file($filePath)));      //Il numero casuale viene scelto tra 1 e il numero di righe del CSV
+        if (!in_array($numero_casuale, $array)) {       //Se l'elemento non è presente nell'array temporaneo, allora inseriscilo nell'array. Serve per evitare doppioni di domande
+            $array[] = $numero_casuale;                 //Inserimento valori nell'array
         }
-    } while (sizeof($array) < 20);
-    $_SESSION['ArrayDomande'] = $array;
-    $_SESSION['indice']=0;
-    $_SESSION["risposta"] = null;
-    //var_dump($array);
+    } while (sizeof($array) < 20);      //Ripeti finchè l'array contiene meno di 20 elementi
+    $_SESSION['ArrayDomande'] = $array;     //Il numero delle domande viene salvato nella sessione
+    $_SESSION['indice']=0;                  //Inizializzazione
+    $_SESSION["risposta"] = null;           //Inizializzazione
+    //var_dump($array);                     //Debug
 }
 random();
 ?>

@@ -21,7 +21,7 @@ header("Location:Risultati.php");
 ?>
 <body>
     <div class="text-center container">
-        <img style="height: 7%; width: 7%" src="logo.jfif"  onclick="window.location.href ='1home.php'"> 
+        <img style="height: 7%; width: 7%" src="logo.jfif"  onclick="window.location.href ='home.php'"> 
         <form id="FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <div class="text-center text-light fs-2">
                 <?php

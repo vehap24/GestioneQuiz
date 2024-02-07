@@ -9,9 +9,10 @@
     background-color: rgb(33, 218, 27);
     border-radius: 10px;
     border-width: 0px;
+    transition: 0.3s;
 }
 .bottoneHome:hover{
-    background-color: rgb(22, 153, 17);
+    box-shadow: 10px 15px 25px rgb(8, 131, 24);
 }
 body{
     background-image: url("bg.png")
@@ -28,7 +29,6 @@ input[type="radio"]{
     background-color: rgb(250, 53, 135);
     border-radius: 12px;
     border-style: solid;
-    /*box-shadow: 20px 23px 23px rgb(71, 71, 71);*/
     border-color: rgb(155, 34, 84);
     font-size: 20px;
     font-family: Helvetica;
@@ -36,11 +36,24 @@ input[type="radio"]{
 }
 
 input[type="radio"]:checked+.radio{
-    border-color: rgb(247, 29, 120);
-    background-color: rgb(187, 10, 84);
+    border-color: rgb(216, 0, 90);
+    background-color: rgb(255, 0, 106);
+    box-shadow: 10px 15px 25px rgb(168, 2, 71);
 }
 .radio:hover{
     border-color: rgb(216, 0, 90);
     background-color: rgb(255, 0, 106);
     box-shadow: 10px 15px 25px rgb(168, 2, 71);
+}
+input[type="submit"]#invio{
+    height: 50px;
+    width: 105px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(33, 218, 27);
+    transition: 0.3s;
+}
+#invio:hover{
+    box-shadow: 0px 5px 25px rgb(8, 131, 24);
 }

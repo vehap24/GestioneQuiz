@@ -40,19 +40,19 @@
                 echo "<img src='immagine_1.jpg'>";
                 break;
             case 1:
-                echo "<br>Frase 2<br>";
+                echo "<br>Solo 1???<br>";
                 echo "<img src='immagine_2.jpg'>";
                 break;
             case 2:
-                echo "<br>Frase 3<br>";
+                echo "<br>Forse sei un po' confuso<br>";
                 echo "<img src='immagine_3.jpg'>";
                 break;
             case 3:
-                echo "<br>Frase 4<br>";
+                echo "<br>BRUH<br>";
                 echo "<img src='immagine_4.jpg'>";
                 break;
             case 4:
-                echo "<br>Frase 5<br>";
+                echo "<br>Questo quiz non fa per te...<br>";
                 echo "<img src='immagine_5.jpg'>";
                 break;
             case 5:
@@ -60,7 +60,7 @@
                 echo "<img src='immagine_6.jpg'>";
                 break;
             case 6:
-                echo "<br>Frase 7<br>";
+                echo "<br>Questo punteggio...<br>";
                 echo "<img src='immagine_7.jpg'>";
                 break;
             case 7:
@@ -68,55 +68,55 @@
                 echo "<img src='immagine_8.jpg'>";
                 break;
             case 8:
-                echo "<br>Frase 9<br>";
+                echo "<br>NO<br>";
                 echo "<img src='immagine_9.jpg'>";
                 break;
             case 9:
-                echo "<br>Frase 10<br>";
+                echo "<br>E che diamine, nemmeno metà?!?!?!<br>";
                 echo "<img src='immagine_10.jpg'>";
                 break;
             case 10:
-                echo "<br>Frase 11<br>";
+                echo "<br>Assurdo, metà sono risposte esatte<br>";
                 echo "<img src='immagine_11.jpg'>";
                 break;
             case 11:
-                echo "<br>Frase 12<br>";
+                echo "<br>Ti sei impegnato un minimo, ma forse è ancora troppo<br>";
                 echo "<img src='immagine_12.jpg'>";
                 break;
             case 12:
-                echo "<br>Frase 13<br>";
+                echo "<br>Chiaramente puoi fare di meglio!<br>";
                 echo "<img src='immagine_13.jpg'>";
                 break;
             case 13:
-                echo "<br>Frase 14<br>";
+                echo "<br>OSSERVO I TUOI PROGRESSI<br>";
                 echo "<img src='immagine_14.jpg'>";
                 break;
             case 14:
-                echo "<br>Frase 15<br>";
+                echo "<br>> Wireless Router<br>> Looks inside<br>> Wires<br>";
                 echo "<img src='immagine_15.jpg'>";
                 break;
             case 15:
-                echo "<br>Frase 16<br>";
+                echo "<br>Bleeeh!<br>";
                 echo "<img src='immagine_16.jpg'>";
                 break;
             case 16:
-                echo "<br>Frase 17<br>";
+                echo "<br>Bleeeh!<br>";
                 echo "<img src='immagine_17.jpg'>";
                 break;
             case 17:
-                echo "<br>Frase 18<br>";
+                echo "<br>Complimenti!<br>";
                 echo "<img src='immagine_18.jpg'>";
                 break;
             case 18:
-                echo "<br>Frase 19<br>";
+                echo "<br>Continua così!<br>";
                 echo "<img src='immagine_19.jpg'>";
                 break;
             case 19:
-                echo "<br>Frase 20<br>";
+                echo "<br>BRAVO!!! Ce la stavi per fare!<br>";
                 echo "<img src='immagine_20.jpg'>";
                 break;
             case 20:
-                echo "<br>Frase 21<br>";
+                echo "<br>NERD!!!!!!!!<br>";
                 echo "<img src='immagine_21.jpg'>";
                 break;
             }

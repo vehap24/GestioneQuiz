@@ -23,7 +23,7 @@ header("Location:Risultati.php");
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jpg"  onclick="window.location.href ='1home.php'"> 
         <form id="FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-            <div class="text-center text-light">
+            <div class="text-center text-light fs-2">
                 <?php
                     echo $temp_array[0];
                 ?>

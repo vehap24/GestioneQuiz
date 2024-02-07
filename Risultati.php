@@ -33,93 +33,94 @@
                     echo "</p></div></div>";
                 }
             }
-            printf("<p class='fs-1'><b><span style='color:#ff66cc'>" . $risposte_corrette . "</span></b>/20 risposte corrette</p>");
+            printf("<p class='fs-1'><b><span style='color:#ff66cc'>" . $risposte_corrette . "</span></b>/20 risposte corrette</p><div class='container'><div class='row'>");
             switch($risposte_corrette){
             case 0:
-                echo "<br>COME DIAVOLO HAI FATTO?!?!?!<br>";
-                echo "<img src='immagine_1.jpg'>";
+                echo "<div class='col'><br>COME DIAVOLO HAI FATTO?!?!?!<br></div>";
+                echo "<div class='col'> <img src='immagine_1.jpg' style='height: 400px'></div>";
                 break;
             case 1:
-                echo "<br>Solo 1???<br>";
-                echo "<img src='immagine_2.jpg'>";
+                echo "<div class='col'><br>Solo 1???<br></div>";
+                echo "<div class='col'><img src='immagine_2.jpg' style='height: 400px'>";
                 break;
             case 2:
-                echo "<br>Forse sei un po' confuso<br>";
-                echo "<img src='immagine_3.jpg'>";
+                echo "<div class='col'><br>Forse sei un po' confuso<br></div>";
+                echo "<div class='col'><img src='immagine_3.jpg' style='height: 400px'>";
                 break;
             case 3:
-                echo "<br>BRUH<br>";
-                echo "<img src='immagine_4.jpg'>";
+                echo "<div class='col'><br>BRUH<br></div>";
+                echo "<div class='col'><img src='immagine_4.jpg' style='height: 400px'>";
                 break;
             case 4:
-                echo "<br>Questo quiz non fa per te...<br>";
-                echo "<img src='immagine_5.jpg'>";
+                echo "<div class='col align-middle'><br>Questo quiz non fa per te...<br></div>";
+                echo "<div class='col'><img src='immagine_5.jpg' style='height: 400px'>";
                 break;
             case 5:
-                echo "<br>[INSERIRE TESTO QUI]]<br>";
-                echo "<img src='immagine_6.jpg'>";
+                echo "<div class='col'><br>[INSERIRE TESTO QUI]]<br></div>";
+                echo "<div class='col'><img src='immagine_6.jpg' style='height: 400px'>";
                 break;
             case 6:
-                echo "<br>Questo punteggio...<br>";
-                echo "<img src='immagine_7.jpg'>";
+                echo "<div class='col'><br>Questo punteggio...<br></div>";
+                echo "<div class='col'><img src='immagine_7.jpg' style='height: 400px'>";
                 break;
             case 7:
-                echo "<br>Continua con la tua vita...<br>";
-                echo "<img src='immagine_8.jpg'>";
+                echo "<div class='col'><br>Continua con la tua vita...<br></div>";
+                echo "<div class='col'><img src='immagine_8.jpg' style='height: 400px'>";
                 break;
             case 8:
-                echo "<br>NO<br>";
-                echo "<img src='immagine_9.jpg'>";
+                echo "<div class='col'><br>NO<br></div>";
+                echo "<div class='col'><img src='immagine_9.jpg' style='height: 400px'>";
                 break;
             case 9:
-                echo "<br>E che diamine, nemmeno metà?!?!?!<br>";
-                echo "<img src='immagine_10.jpg'>";
+                echo "<div class='col'><br>E che diamine, nemmeno metà?!?!?!<br></div>";
+                echo "<div class='col'><img src='immagine_10.jpg' style='height: 400px'>";
                 break;
             case 10:
-                echo "<br>Assurdo, metà sono risposte esatte<br>";
-                echo "<img src='immagine_11.jpg'>";
+                echo "<div class='col'><br>Assurdo, metà sono risposte esatte<br></div>";
+                echo "<div class='col'><img src='immagine_11.jpg' style='height: 400px'>";
                 break;
             case 11:
-                echo "<br>Ti sei impegnato un minimo, ma forse è ancora troppo<br>";
-                echo "<img src='immagine_12.jpg'>";
+                echo "<div class='col'><br>Ti sei impegnato un minimo, ma forse è ancora troppo<br></div>";
+                echo "<div class='col'><img src='immagine_12.jpg' style='height: 400px'>";
                 break;
             case 12:
-                echo "<br>Chiaramente puoi fare di meglio!<br>";
-                echo "<img src='immagine_13.jpg'>";
+                echo "<div class='col'><br>Chiaramente puoi fare di meglio!<br></div>";
+                echo "<div class='col'><img src='immagine_13.jpg' style='height: 400px'>";
                 break;
             case 13:
-                echo "<br>OSSERVO I TUOI PROGRESSI<br>";
-                echo "<img src='immagine_14.jpg'>";
+                echo "<div class='col'><br>OSSERVO I TUOI PROGRESSI<br></div>";
+                echo "<div class='col'><img src='immagine_14.jpg' style='height: 400px'>";
                 break;
             case 14:
-                echo "<br>> Wireless Router<br>> Looks inside<br>> Wires<br>";
-                echo "<img src='immagine_15.jpg'>";
+                echo "<div class='col'><br>> Wireless Router<br>> Looks inside<br>> Wires<br></div>";
+                echo "<div class='col'><img src='immagine_15.jpg' style='height: 400px'>";
                 break;
             case 15:
-                echo "<br>Bleeeh!<br>";
-                echo "<img src='immagine_16.jpg'>";
+                echo "<div class='col'><br>Bleeeh!<br></div>";
+                echo "<div class='col'><img src='immagine_16.jpg' style='height: 400px'>";
                 break;
             case 16:
-                echo "<br>Bleeeh!<br>";
-                echo "<img src='immagine_17.jpg'>";
+                echo "<div class='col'><br>Bleeeh!<br></div>";
+                echo "<div class='col'><img src='immagine_17.jpg' style='height: 400px'>";
                 break;
             case 17:
-                echo "<br>Complimenti!<br>";
-                echo "<img src='immagine_18.jpg'>";
+                echo "<div class='col'><br>Complimenti!<br></div>";
+                echo "<div class='col'><img src='immagine_18.jpg' style='height: 400px'>";
                 break;
             case 18:
-                echo "<br>Continua così!<br>";
-                echo "<img src='immagine_19.jpg'>";
+                echo "<div class='col'><br>Continua così!<br></div>";
+                echo "<div class='col'><img src='immagine_19.jpg' style='height: 400px'>";
                 break;
             case 19:
-                echo "<br>BRAVO!!! Ce la stavi per fare!<br>";
-                echo "<img src='immagine_20.jpg'>";
+                echo "<div class='col'><br>BRAVO!!! Ce la stavi per fare!<br></div>";
+                echo "<div class='col'><img src='immagine_20.jpg' style='height: 400px'>";
                 break;
             case 20:
-                echo "<br>NERD!!!!!!!!<br>";
-                echo "<img src='immagine_21.jpg'>";
+                echo "<div class='col'><br>NERD!!!!!!!!<br></div>";
+                echo "<div class='col'><img src='immagine_21.jpg' style='height: 400px'>";
                 break;
             }
+            printf("</div></div></div>");
         ?>
     </div>
         

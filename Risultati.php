@@ -33,7 +33,7 @@
                     echo "</p></div></div>";
                 }
             }
-            printf("<p class='fs-1'><b><span style='color:#ff66cc'>" . $risposte_corrette . "</span></b>/20 risposte corrette</p><div class='container'><div class='row'>");
+            printf("<p class='fs-1'><b><span style='color:#ff66cc'>" . $risposte_corrette . "</span></b>/20 risposte corrette</p><div class='container'><div class='row m-4'>");
             switch($risposte_corrette){
             case 0:
                 echo "<div class='col'><br>COME DIAVOLO HAI FATTO?!?!?!<br></div>";
@@ -120,9 +120,11 @@
                 echo "<div class='col'><img src='immagine_21.jpg' style='height: 400px'>";
                 break;
             }
-            printf("</div></div></div>");
+            printf("</div><div class='row'><div class='fs-1 m-3'>Vuoi rigiocare?</div><button type='button' class='btn btn-primary btn-lg fs-2 m-2' onclick='window.location.href =\"1home.php\"'>Rigioca</button></div></div>");
         ?>
+        
     </div>
+    
         
 </body>
 </html>

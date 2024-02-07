@@ -1,4 +1,10 @@
-@font-face { font-family: "Germanica"; src: url('GermaniaOne-Regular.ttf'); }
+/*SFONDO SITO GENERALE*/
+body{
+    background-image: url("bg.png")
+}
+
+/*CSS PER I BOTTONI NELLE PAGINE HOME.PHP, START.PHP E CREDITI.HTML*/
+@font-face { font-family: /*Come voglio chiamare il font custom*/"Germanica"; src: /*L'origine*/url('GermaniaOne-Regular.ttf'); }
 .bottoneHome{
     font-family: "Germanica";
     font-size: 40px;
@@ -9,15 +15,13 @@
     background-color: rgb(33, 218, 27);
     border-radius: 10px;
     border-width: 0px;
-    transition: 0.3s;
+    transition: 0.3s; /*Cos'è? Praticamente fa durare la transizione tra il non-hover e l'hover (e viceversa) 0.3 secondi, è la soluzione dei poveri per evitare @keyframe animations*/
 }
-.bottoneHome:hover{
+.bottoneHome:hover{ /*Si attiva SOLO se ci passi sopra col mouse (lol)*/
     box-shadow: 10px 15px 25px rgb(8, 131, 24);
 }
-body{
-    background-image: url("bg.png")
-}
-input[type="radio"]{
+
+input[type="radio"]{ /*INPUT[TYPE="RADIO"]?? EHH?? E' molto semplice ed esplicito, quella parte di CSS viene applicata SOLO agli input di type radio*/
     display:none;
 }
 .radio{

@@ -1,9 +1,9 @@
 <?php
 session_start();
 $risposte_corrette = 0;
-var_dump($_SESSION["risposta"]);
+//var_dump($_SESSION["risposta"]);  //DEBUG!!!
 echo "<br>";
-//var_dump($_SESSION["ArrayDomande"]);
+//var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
 echo "<br>";
 $numero_domanda = $_SESSION["ArrayDomande"];
 $domanda = file('Domande.csv');

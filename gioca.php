@@ -16,8 +16,8 @@ $indice = $_SESSION["indice"];
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]); //Non so perchè funziona... Ma funziona... NON TOCCARLO!!!
 if($indice == 20)
 header("Location:Risultati.php");
-var_dump($_SESSION["ArrayDomande"]);//DEBUG!!!
-var_dump($indice);
+//var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
+//var_dump($indice);    //DEBUG!!!
 ?>
 <body>
     <div class="text-center container">
@@ -63,6 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $_SESSION["risposta"][$_SESSION["indice"]-1] = $_SESSION["risposte"];
     }
     $_SESSION["indice"] += 1;
-    var_dump($_SESSION["risposta"]);
+    //var_dump($_SESSION["risposta"]);    //DEBUG!!!
 }
 ?>

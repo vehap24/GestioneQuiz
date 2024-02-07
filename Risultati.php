@@ -10,41 +10,33 @@
 </head>
 <body>
     <div class="container text-center text-light fs-3">
-        <img style="height: 7%; width: 7%" src="logo.jpg"> 
+        <img style="height: 7%; width: 7%" src="logo.jpg" onclick="window.location.href ='1home.php'"> 
         <h1 class="text-center text-light">RIEPILOGO DOMANDE E RISPOSTE</h1>
         <?php
-        //INSERIRE CARDS BOOTSTRAP RICORDATI VEHAP
             session_start();
             $risposte_corrette = 0;
-            //var_dump($_SESSION["ArrayDomande"]);
             $numero_domanda = $_SESSION["ArrayDomande"];
             $domanda = file('Domande.csv');
             for($i = 0; $i < 20; $i++){
                 $temp_array = explode('|',$domanda[$numero_domanda[$i]-1]);
-                echo $temp_array[0];
-                echo "<br>";
                 if($_SESSION["risposta"][$i] == $temp_array[5]){
-                    echo "<div class='card border-success mb-3'>Risposta data e corretta: ";
-                    echo $temp_array[intval($temp_array[5])];
-                    echo "</p>";
+                    printf("<div class='card text-bg-success mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
+                    echo "<div class='card-body>' <p class='card-text'> <b>Risposta data e corretta:</b> ";
+                    printf($temp_array[intval($temp_array[5])] . "</p></div></div>");
                     $risposte_corrette++;
-                    //echo "Bravo!!!<br>";
                 } else {
-                    echo "Risposta data: <p style='color: rgb(255, 51, 0)'>";
-                    echo $temp_array[intval($_SESSION["risposta"][$i])];
-                    echo "</p>";
-                    echo "Risposta corretta: <p style='color: rgb(102, 255, 102)'>";
+                    printf("<div class='card text-bg-danger mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
+                    echo "<div class='card-body'><p class='card-text'><b>Risposta data:</b> ";
+                    echo $temp_array[intval($_SESSION["risposta"][$i])] . "<br>";
+                    echo "<b>Risposta corretta:</b> ";
                     echo $temp_array[intval($temp_array[5])];
-                    echo "</p>";
-                    //echo "NOOOOOOO!!!<br>";
+                    echo "</p></div></div>";
                 }
             }
-            echo $risposte_corrette;
-            echo "/20 risposte corrette";
-            echo "<br>";
+            printf("<p class='fs-1'><b><span style='color:#ff66cc'>" . $risposte_corrette . "</span></b>/20 risposte corrette</p>");
             switch($risposte_corrette){
             case 0:
-                echo "<br>COME DIAVOLO HAI FATTO ANGELINI"
+                echo "COME DIAVOLO HAI FATTO ANGELINI";
                 echo "<img src='immagine_1.jpg'>";
                 break;
             case 1:

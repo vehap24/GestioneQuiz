@@ -21,7 +21,7 @@ header("Location:Risultati.php");
 ?>
 <body>
     <div class="text-center container">
-        <img style="height: 7%; width: 7%" src="logo.jpg"> 
+        <img style="height: 7%; width: 7%" src="logo.jpg"  onclick="window.location.href ='1home.php'"> 
         <form id="FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <div class="text-center text-light">
                 <?php
@@ -30,21 +30,21 @@ header("Location:Risultati.php");
             </div>
             <div class="row">
                 <div class="col">
-                    <input class="btn-check" type="radio" id="1" name="risposta_data" value="1">
+                    <input class="btn-check" type="radio" id="1" name="risposta_data" value="1" required>
                     <label class="btn btn-outline-secondary" for="1"><?php echo $temp_array[1];?></label>
                 </div>
                 <div class="col">
-                    <input class="btn-check" type="radio" id="2" name="risposta_data" value="2"> 
+                    <input class="btn-check" type="radio" id="2" name="risposta_data" value="2" required> 
                     <label class="btn btn-outline-secondary" for="2"><?php echo $temp_array[2];?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input class="btn-check" type="radio" id="3" name="risposta_data" value="3">
+                    <input class="btn-check" type="radio" id="3" name="risposta_data" value="3" required>
                     <label class="btn btn-outline-secondary" for="3"><?php echo $temp_array[3];?></label>
                 </div>
                 <div class="col">
-                    <input class="btn-check" type="radio" id="4" name="risposta_data" value="4">
+                    <input class="btn-check" type="radio" id="4" name="risposta_data" value="4" required>
                     <label class="btn btn-outline-secondary" for="4"><?php echo $temp_array[4];?></label>
                 </div>
                 <div>

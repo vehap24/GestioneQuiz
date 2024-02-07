@@ -1,9 +1,9 @@
-/*SFONDO SITO GENERALE*/
+/*___________________________________________SFONDO SITO GENERALE___________________________________________*/
 body{
     background-image: url("bg.png")
 }
 
-/*CSS PER I BOTTONI NELLE PAGINE HOME.PHP, START.PHP E CREDITI.HTML*/
+/*___________________________________________CSS PER I BOTTONI NELLE PAGINE HOME.PHP, START.PHP E CREDITI.HTML___________________________________________*/
 @font-face { font-family: /*Come voglio chiamare il font custom*/"Germanica"; src: /*L'origine*/url('GermaniaOne-Regular.ttf'); }
 .bottoneHome{
     font-family: "Germanica";
@@ -21,12 +21,14 @@ body{
     box-shadow: 10px 15px 25px rgb(8, 131, 24);
 }
 
+/*___________________________________________I INPUT RADIO___________________________________________*/
+
 input[type="radio"]{ /*INPUT[TYPE="RADIO"]?? EHH?? E' molto semplice ed esplicito, quella parte di CSS viene applicata SOLO agli input di type radio*/
-    display:none;
+    display:none; /*Praticamente mi fa scomparire il pallino classico dei input radio*/
 }
-.radio{
+.radio{ /*Classe per i RADIO, non sto modificando proprio sull'elemento input radio ma è una classe a parte con lo stesso nome, sì è un nome un pò ambiguo che potrebbe confondere ma funziona e non mi interessa*/
     padding: 5px;
-    cursor: pointer;
+    cursor: pointer; /*Praticamente rende questo DIV cliccabile, quindi funge da bottone*/
     height: 75px;
     width: 100%;
     color: white;
@@ -36,20 +38,25 @@ input[type="radio"]{ /*INPUT[TYPE="RADIO"]?? EHH?? E' molto semplice ed esplicit
     border-color: rgb(155, 34, 84);
     font-size: 20px;
     font-family: Helvetica;
-    transition: 0.3s;
+    transition: 0.3s; /*Stessa cosa di prima, fa durare la transizione da una fase all'altra 0.3s*/
 }
 
-input[type="radio"]:checked+.radio{
+/*___________________________________________LE "ANIMAZIONI" DEI RADIO___________________________________________*/
+
+input[type="radio"]:checked+.radio{ /*EH??? COSA VUOL DIRE T_T Tranquilli! E' semplice anche questo, praticamente inputblabla:checked significa che applica quel css SOLO agli input radio selezionati, mentre "+radio" va proprio nello specifico, quindi in questo caso nella mia classe "radio"*/
     border-color: rgb(216, 0, 90);
     background-color: rgb(255, 0, 106);
     box-shadow: 10px 15px 25px rgb(168, 2, 71);
 }
-.radio:hover{
+.radio:hover{ /*Sempre stessa cosa di prima, quando passo sopra il div col cursore applica ste robe*/
     border-color: rgb(216, 0, 90);
     background-color: rgb(255, 0, 106);
     box-shadow: 10px 15px 25px rgb(168, 2, 71);
 }
-input[type="submit"]#invio{
+
+/*___________________________________________IL SUBMIT DEI RADIO___________________________________________*/
+
+input[type="submit"]#invio{ /*Ok, sta volta invece che creare una nuova classe ho deciso di usare un ID. Come lo capisco? Perché ho scritto "#invio", la parola chiave è il "#", significa che lui va a creare un ID specifico per quel css che posso richiamare tramite boh <div id="invio"> oppure come fatto nell'esercizio nel submit*/
     height: 50px;
     width: 105px;
     border-radius: 12px;
@@ -58,6 +65,9 @@ input[type="submit"]#invio{
     background-color: rgb(33, 218, 27);
     transition: 0.3s;
 }
-#invio:hover{
+
+/*___________________________________________LE "ANIMAZIONI" DEL SUBMIT___________________________________________*/
+
+#invio:hover{ /*Guarda direttamente i commenti sopra*/
     box-shadow: 0px 5px 25px rgb(8, 131, 24);
 }

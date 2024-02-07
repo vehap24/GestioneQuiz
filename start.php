@@ -29,7 +29,7 @@ random();
 </head>
 <body>
     <div class="text-center">
-       <img style="height: 7%; width: 7%" src="logo.jpg"> 
+       <img style="height: 7%; width: 7%" src="logo.jfif"> 
     </div>
     <div class="container">
         <form action="gioca.php" class="text-center text-light" style="margin-top:100px" method="POST">

@@ -21,7 +21,7 @@ header("Location:Risultati.php");
 ?>
 <body>
     <div class="text-center container">
-        <img style="height: 7%; width: 7%" src="logo.jpg"  onclick="window.location.href ='1home.php'"> 
+        <img style="height: 7%; width: 7%" src="logo.jfif"  onclick="window.location.href ='1home.php'"> 
         <form id="FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <div class="text-center text-light fs-2">
                 <?php
@@ -52,6 +52,7 @@ header("Location:Risultati.php");
                 </div>
             </div>
         </form>
+        <img class="img img-fluid" src="068.gif" style="height: 35%; width: 35%">
     </div>
     
 </body>

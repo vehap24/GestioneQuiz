@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container text-center text-light fs-3">
-        <img style="height: 7%; width: 7%" src="logo.jpg" onclick="window.location.href ='1home.php'"> 
+        <img style="height: 7%; width: 7%" src="logo.jfif" onclick="window.location.href ='1home.php'"> 
         <h1 class="text-center text-light">RIEPILOGO DOMANDE E RISPOSTE</h1>
         <?php
             session_start();

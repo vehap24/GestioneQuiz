@@ -31,9 +31,15 @@ random();
     <div class="text-center">
        <img style="height: 7%; width: 7%" src="logo.jpg"> 
     </div>
-    <form action="gioca.php" class="text-center" style="margin-top:100px" method="POST">
-        <p class="text-light" style="font-size:100px">SEI PRONTO AD AVVIARE LA PARTITA???</p>
-        <input type="submit" class="bottoneHome" value="YEAHHHH LET'S GOOOO!!!!!">
-    </form>
+    <div class="container">
+        <form action="gioca.php" class="text-center text-light" style="margin-top:100px" method="POST">
+            <p class="fs-1"><b>COME FUNZIONA?</b></p>
+            <p class="fs-3">Ti verrà presentata la domanda in alto allo schermo, e ti verranno presentate le quattro risposte. Dovrai cliccare in una di esse e poi cliccare il tasto verde sotto "Invia".</p>
+            <p class="fs-3">Ma ATTENTO!!! <b>Una volta data la risposta non potrai cambiarla, quindi FAI ATTENZIONE</b>, potresti trovare alcune domande "insensate" ma sei solo tu che lo pensi.</p>
+            <p class="fs-3">Se ti ritieni pronto sentiti libero ad avviare, altrimenti boh rimani a guardare questa schermata</p>
+            <input type="submit" class="bottoneHome" value="YEAHHHH LET'S GOOOO!!!!!">
+        </form>
+    </div>
+        
 </body>
 </html>

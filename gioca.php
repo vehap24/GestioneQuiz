@@ -48,7 +48,7 @@ header("Location:Risultati.php");
                     <label for="4" class="radio"><?php echo $temp_array[4];?></label>
                 </div>
                 <div class="my-5">
-                    <input type="submit" value="Rispondi">
+                    <input type="submit" id="invio" value="Rispondi">
                 </div>
             </div>
         </form>

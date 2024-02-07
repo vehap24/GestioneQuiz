@@ -29,25 +29,25 @@ header("Location:Risultati.php");
                 ?>
             </div>
             <div class="row">
-                <div class="col">
-                    <input class="btn-check" type="radio" id="1" name="risposta_data" value="1" required>
-                    <label class="btn btn-outline-secondary" for="1"><?php echo $temp_array[1];?></label>
+                <div class="col p-0 m-3">
+                    <input type="radio" id="1" name="risposta_data" value="1" required>
+                    <label for="1" class="radio"><?php echo $temp_array[1];?></label>
                 </div>
-                <div class="col">
-                    <input class="btn-check" type="radio" id="2" name="risposta_data" value="2" required> 
-                    <label class="btn btn-outline-secondary" for="2"><?php echo $temp_array[2];?></label>
+                <div class="col p-0 m-3">
+                    <input type="radio" id="2" name="risposta_data" value="2" required> 
+                    <label for="2" class="radio"><?php echo $temp_array[2];?></label>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <input class="btn-check" type="radio" id="3" name="risposta_data" value="3" required>
-                    <label class="btn btn-outline-secondary" for="3"><?php echo $temp_array[3];?></label>
+                <div class="col p-0 m-3">
+                    <input type="radio" id="3" name="risposta_data" value="3" required>
+                    <label for="3" class="radio"><?php echo $temp_array[3];?></label>
                 </div>
-                <div class="col">
-                    <input class="btn-check" type="radio" id="4" name="risposta_data" value="4" required>
-                    <label class="btn btn-outline-secondary" for="4"><?php echo $temp_array[4];?></label>
+                <div class="col p-0 m-3">
+                    <input type="radio" id="4" name="risposta_data" value="4" required>
+                    <label for="4" class="radio"><?php echo $temp_array[4];?></label>
                 </div>
-                <div>
+                <div class="my-5">
                     <input type="submit" value="Rispondi">
                 </div>
             </div>

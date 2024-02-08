@@ -56,7 +56,7 @@
                 echo "<div class='col'><img src='immagine_5.jpg' style='height: 400px'>";
                 break;
             case 5:
-                echo "<div class='col'><br>[INSERIRE TESTO QUI]]<br></div>";
+                echo "<div class='col'><br><b>[INSERIRE TESTO QUI]</b><br></div>";
                 echo "<div class='col'><img src='immagine_6.jpg' style='height: 400px'>";
                 break;
             case 6:

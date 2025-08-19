@@ -14,6 +14,7 @@ $domanda = file('Domande.csv');     //Caricare file in variabile
 $numero_domanda = $_SESSION["ArrayDomande"];        //Le variabili contenute nella sessioni vengono caricate in una variabile locale
 $indice = $_SESSION["indice"];                      //La variabile contatore viene carivata in una variabile locale
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividiamo la riga con explode, $domanda è il file, dentro $numero_domanda ci sono 20 numeri che rappresentano il numero della domanda che vanno da 1 a MAX_RIGHE_FILE, per accedere al numero di domanda che si vuole far visualizzare, usiamo la variabile $indice, che incrementa ogni volta che si fa il submit della risposta. Ovviamente bisogna fare -1 perchè stiamo lavorando con un array
+//TODO Cambiare questo if
 if($indice == 20)                                                       //Per concludere il quiz
 header("Location:Risultati.php");
 //var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
@@ -54,9 +55,17 @@ header("Location:Risultati.php");
         </form>
         <img class="img img-fluid" src="068.gif" style="height: 35%; width: 35%">
     </div>
+    <div class="d-inline-flex p-2 justify-content-center"> <!--Non sto capendo cosa cazzo sto facendo T_T-->
+        <p class="text-white text-center align-middle"> <?php echo $indice; ?> di 20</p> <!-- Cosa cazzo è il frontend lil vro, pls sybau -->
+        <!--Cazzo sono sti goofy aaah type shit di commenti lil vro frontendista-->
+        <!--Però funziona???-->
+        <!--Odio Bootstrap-->
+        <!--TODO: Vehap pensaci te-->
+    </div>
     
 </body>
 </html>
+<!--TODO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA (cambiare la logica sotto)-->
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){      //Appena si preme il submit, il server si richiama da solo, richiamando la funzione
     if (isset($_POST["risposta_data"])){        //Se la variabile $risposta_data è settata, allora vero. Evitiamo il warning della variabile non inizializzata

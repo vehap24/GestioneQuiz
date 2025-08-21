@@ -53,7 +53,7 @@ header("Location:Risultati.php");
                 </div>
             </div>
         </form>
-        <img class="img img-fluid" src="068.gif" style="height: 35%; width: 35%">
+        <img class="img img-fluid" src="img/068.gif" style="height: 35%; width: 35%">
     </div>
     <div class="d-inline-flex p-2 justify-content-center"> <!--Non sto capendo cosa cazzo sto facendo T_T-->
         <p class="text-white text-center align-middle"> <?php echo $indice; ?> di 20</p> <!-- Cosa cazzo è il frontend lil vro, pls sybau -->

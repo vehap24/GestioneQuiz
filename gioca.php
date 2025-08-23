@@ -22,6 +22,9 @@ $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividi
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jfif"  onclick="window.location.href ='home.php'"> 
         <form id = "FORM" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <div>
+                <p class="text-white text-center align-middle"> <?php echo $indice + 1; ?> di 20</p>
+            </div>
             <div class="text-center text-light fs-2">
                 <?php
                     echo $temp_array[0];
@@ -57,9 +60,6 @@ $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividi
             <img class="img img-fluid" src="img/068.gif" style="height: 35%; width: 35%">
     </div>
     <div class="d-flex justify-content-around align-middle">
-        <div>
-            <p class="text-white text-center align-middle"> <?php echo $indice + 1; ?> di 20</p>
-        </div>
         <div class="d-inline-block" style="width: 200px; height: 100px; background-color: yellow;">
             <p><b>DEBUG</b></p>
             <?php

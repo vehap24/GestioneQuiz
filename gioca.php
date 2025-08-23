@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ //In caso il server ha fatto una richi
         header("Location:Risultati.php");
 
     if(isset($_POST['risposta_data']))  //Salvataggio risposte utente
-        $_SESSION["risposta"][$_SESSION["indice"]-1] = $_POST["risposta_data"];
+        $_SESSION["risposta"][$_SESSION["indice"]] = $_POST["risposta_data"];
 
     if(isset($_POST['freccia'])){   //Gestione avanti e indietro con le domande
         if($_POST['freccia'] == ">>")

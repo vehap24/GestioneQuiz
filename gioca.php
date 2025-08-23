@@ -10,6 +10,28 @@
 </head>
 <?php
 session_start();
+
+//Lasciarlo qui, se no le variabili non si aggiornano correttamente
+if($_SERVER["REQUEST_METHOD"] == "POST"){ //In caso il server ha fatto una richiesta
+
+    if(isset($_POST['riavvia']))    //Temp
+        header("Location:start.php");
+
+    if(isset($_POST['termina']))    //Per andare alla pagina dei risultati
+        header("Location:Risultati.php");
+
+    if(isset($_POST['risposta_data']))  //Salvataggio risposte utente
+        $_SESSION["risposta"][$_SESSION["indice"]-1] = $_POST["risposta_data"];
+
+    if(isset($_POST['freccia'])){   //Gestione avanti e indietro con le domande
+        if($_POST['freccia'] == ">>")
+            $indice = $_SESSION['indice'] += 1;
+        else if($_POST['freccia'] == "<<")
+            $indice = $_SESSION['indice'] -= 1;
+    }
+
+}
+
 $domanda = file('Domande.csv');     //Caricare file in variabile
 $numero_domanda = $_SESSION["ArrayDomande"];        //Le variabili contenute nella sessioni vengono caricate in una variabile locale
 $indice = $_SESSION['indice'];                      //La variabile contatore viene caricata in una variabile locale
@@ -75,34 +97,6 @@ $temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividi
 </body>
 </html>
 
-<?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-    if(isset($_POST['riavvia']))
-        header("Location:start.php");
-
-    if(isset($_POST['termina']))
-        header("Location:Risultati.php");
-
-    if(isset($_POST['risposta_data']))
-        $_SESSION["risposta"][$_SESSION["indice"]-1] = $_POST["risposta_data"];
-
-    if(isset($_POST['freccia'])){
-        if($_POST['freccia'] == ">>")
-        {
-            $indice = $_SESSION['indice'] += 1;
-            $_POST['freccia'] = NULL;
-        }
-        else if(isset($_POST['freccia']) == "<<")
-        {
-            $indice = $_SESSION['indice'] -= 1;
-            $_POST['freccia'] = NULL;
-        }
-    }
-
-}
-
-?>
 
 <!-- if ($_SERVER["REQUEST_METHOD"] == "POST"){      //Appena si preme il submit, il server si richiama da solo, richiamando la funzione
     if (isset($_POST["risposta_data"])){        //Se la variabile $risposta_data è settata, allora vero. Evitiamo il warning della variabile non inizializzata

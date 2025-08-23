@@ -17,18 +17,20 @@ error_reporting(E_ERROR | E_PARSE); ?>
         <?php
             session_start();
             $risposte_corrette = 0;     //Inizializzazione variabile
+            $risposta_vuota = 0;
             $numero_domanda = $_SESSION["ArrayDomande"];        //Recupero domande dalla sessione
             $domanda = file('Domande.csv');     //Metter file in variabile
             for($i = 0; $i < 20; $i++){     //Inizia una stampa
                 $temp_array = explode('|',$domanda[$numero_domanda[$i]]);     //Divide l'array
                 
                 if($_SESSION["risposta"][$i] == NULL){
-                    printf("<div class='card text-bg-warning mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
+                    printf("<div class='card text-bg-secondary mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
                     echo "<div class='card-body'><p class='card-text'><b>Risposta non data.</b><br>";
                     //echo $temp_array[intval($_SESSION["risposta"][$i])] . "<br>";
                     echo "<b>Risposta corretta:</b> ";
                     echo $temp_array[intval($temp_array[5])];
                     echo "</p></div></div>";
+                    $risposta_vuota++;
                 }
                 else if($_SESSION["risposta"][$i] == $temp_array[5]){        //Si mette al confronto il valore della risosta dell'utente e la risposta esatta segnata nel file
                     printf("<div class='card text-bg-success mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");
@@ -49,8 +51,14 @@ error_reporting(E_ERROR | E_PARSE); ?>
             //TODO: Renderlo meno hardcoded, casomai usare %
             switch($risposte_corrette){
             case 0:
-                echo "<div class='col'><br>COME DIAVOLO HAI FATTO?!?!?!<br></div>";
-                echo "<div class='col'> <img src='img/immagine_1.jpg' style='height: 400px'></div>";
+                if($risposta_vuota != 20){
+                    echo "<div class='col'><br>COME DIAVOLO HAI FATTO?!?!?!<br></div>";
+                    echo "<div class='col'> <img src='img/immagine_1.jpg' style='height: 400px'></div>";
+                }
+                else{
+                    echo "<div class='col'><br>Potevi almeno provarci...<br></div>";
+                    echo "<div class='col'> <img src='img/immagine_1.png' style='height: 400px'></div>";
+                }
                 break;
             case 1:
                 echo "<div class='col'><br>Solo 1???<br></div>";

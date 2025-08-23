@@ -11,7 +11,7 @@
 <?php
 session_start();
 
-//Lasciarlo qui, se no le variabili non si aggiornano correttamente
+//Lasciarlo QUI, se no le variabili non vengono lette nell'ordine corretto!!!
 if($_SERVER["REQUEST_METHOD"] == "POST"){ //In caso il server ha fatto una richiesta
 
     if(isset($_POST['termina']))    //Per andare alla pagina dei risultati
@@ -33,10 +33,8 @@ $domanda = file('Domande.csv');     //Caricare file in variabile
 $numero_domanda = $_SESSION["ArrayDomande"];        //Le variabili contenute nella sessioni vengono caricate in una variabile locale
 $indice = $_SESSION['indice'];                      //La variabile contatore viene caricata in una variabile locale
 $temp_array = explode('|',$domanda[$numero_domanda[$indice]]);        //Dividiamo la riga con explode, $domanda è il file, dentro $numero_domanda ci sono 20 numeri che rappresentano il numero della domanda che vanno da 1 a MAX_RIGHE_FILE, per accedere al numero di domanda che si vuole far visualizzare, usiamo la variabile $indice, che incrementa ogni volta che si fa il submit della risposta.
-//if($indice == 20)                                                       //Per concludere il quiz
-//var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
-
 ?>
+
 <body>
     <div class="text-center container">
         <img style="height: 7%; width: 7%" src="logo.jfif"  onclick="window.location.href ='home.php'"> 
@@ -81,13 +79,3 @@ $temp_array = explode('|',$domanda[$numero_domanda[$indice]]);        //Dividiam
     </div>
 </body>
 </html>
-
-
-<!-- if ($_SERVER["REQUEST_METHOD"] == "POST"){      //Appena si preme il submit, il server si richiama da solo, richiamando la funzione
-    if (isset($_POST["risposta_data"])){        //Se la variabile $risposta_data è settata, allora vero. Evitiamo il warning della variabile non inizializzata
-    $_SESSION["risposta"][$_SESSION["indice"]-1] = $_POST["risposta_data"]; //Dal post salviamo la risposta nell'array della sessione
-    }
-    $_SESSION["indice"] += 1;       //Incremento indice
-    //var_dump($_SESSION["risposta"]);    //DEBUG!!!
-} -->
-    

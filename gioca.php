@@ -14,9 +14,6 @@ session_start();
 //Lasciarlo qui, se no le variabili non si aggiornano correttamente
 if($_SERVER["REQUEST_METHOD"] == "POST"){ //In caso il server ha fatto una richiesta
 
-    if(isset($_POST['riavvia']))    //Temp
-        header("Location:start.php");
-
     if(isset($_POST['termina']))    //Per andare alla pagina dei risultati
         header("Location:Risultati.php");
 
@@ -77,22 +74,10 @@ $temp_array = explode('|',$domanda[$numero_domanda[$indice]]);        //Dividiam
             <div class="my-5">
                 <input type="submit" id="invio" name="termina" value="Termina">
             </div>
-                <input type="submit" name="riavvia" value="Riavvia sta merda" class="btn btn-warning">
         </form>
             <img class="img img-fluid" src="img/068.gif" style="height: 35%; width: 35%">
     </div>
     <div class="d-flex justify-content-around align-middle">
-        <div class="d-inline-block" style="width: 200px; height: 100px; background-color: yellow;">
-            <p><b>DEBUG</b></p>
-            <?php
-                if(isset($_POST['freccia']))
-                var_dump($_POST['freccia']);
-                /*
-                echo "ciao ".$indice."<br>";    //DEBUG!!!
-                echo "_SESSION[indice] ".($_SESSION['indice'])."\n";
-                */
-            ?>
-        </div>
     </div>
 </body>
 </html>

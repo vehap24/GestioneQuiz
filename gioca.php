@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ //In caso il server ha fatto una richi
 $domanda = file('Domande.csv');     //Caricare file in variabile
 $numero_domanda = $_SESSION["ArrayDomande"];        //Le variabili contenute nella sessioni vengono caricate in una variabile locale
 $indice = $_SESSION['indice'];                      //La variabile contatore viene caricata in una variabile locale
-$temp_array = explode('|',$domanda[$numero_domanda[$indice]-1]);        //Dividiamo la riga con explode, $domanda è il file, dentro $numero_domanda ci sono 20 numeri che rappresentano il numero della domanda che vanno da 1 a MAX_RIGHE_FILE, per accedere al numero di domanda che si vuole far visualizzare, usiamo la variabile $indice, che incrementa ogni volta che si fa il submit della risposta. Ovviamente bisogna fare -1 perchè stiamo lavorando con un array
+$temp_array = explode('|',$domanda[$numero_domanda[$indice]]);        //Dividiamo la riga con explode, $domanda è il file, dentro $numero_domanda ci sono 20 numeri che rappresentano il numero della domanda che vanno da 1 a MAX_RIGHE_FILE, per accedere al numero di domanda che si vuole far visualizzare, usiamo la variabile $indice, che incrementa ogni volta che si fa il submit della risposta. Ovviamente bisogna fare -1 perchè stiamo lavorando con un array
 //if($indice == 20)                                                       //Per concludere il quiz
 //var_dump($_SESSION["ArrayDomande"]);  //DEBUG!!!
 

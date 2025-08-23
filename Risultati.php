@@ -20,7 +20,7 @@ error_reporting(E_ERROR | E_PARSE); ?>
             $numero_domanda = $_SESSION["ArrayDomande"];        //Recupero domande dalla sessione
             $domanda = file('Domande.csv');     //Metter file in variabile
             for($i = 0; $i < 20; $i++){     //Inizia una stampa
-                $temp_array = explode('|',$domanda[$numero_domanda[$i]-1]);     //Divide l'array
+                $temp_array = explode('|',$domanda[$numero_domanda[$i]]);     //Divide l'array
                 
                 if($_SESSION["risposta"][$i] == NULL){
                     printf("<div class='card text-bg-warning mb-3'> <div class='card-header'>" . $temp_array[0] . "</div>");

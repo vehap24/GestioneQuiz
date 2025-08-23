@@ -1,1 +1,12 @@
-Domanda 1|a|b|c|d|3
+Domanda|a|b|c|d|2|categoria|img
+Che elemento chimico è "Cu"?|Cloro|Oro|Rame|Cobalto|3|Chimica
+Che elemento chimico è "Hg"?|Tecnezio|Mercurio|Oro|Fosforo|2|Chimica
+Che elemento chimico è "N"?|Neon|Argon|Zolfo|Azoto|4|Chimica
+Che elemento chimico è "Na"?|Nichel|Sodio|Arsenico|Calcio|2|Chimica
+Che elemento chimico è "W"?|Ferro|Bario|Tungsteno|Cobalto|3|Chimica
+Che elemento chimico è "H"?|Elio|Idrogeno|Ittrio|Uranio|2|Chimica
+Che elemento chimico è "S"?|Zolfo|Silicio|Selenio|Sodio|1|Chimica
+Che elemento chimico è "K"?|Cadmio|Calcio|Kripton|Potassio|4 |Chimica
+Che elemento chimico è "Sb"?|Antimonio|Stagno|Zirconio|Seaborgio|1|Chimica
+Quanti elementi ci sono nella tavola periodica?|117|120|118|116|3|Chimica
+Cosa succede se si preme ALT+F4?|Apri una nuova scheda|Chiude la cronologia|Apri gestione attività|Chiudi la finestra selezionata|4|Informatica

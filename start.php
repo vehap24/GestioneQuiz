@@ -5,7 +5,7 @@ function random(){
     $filePath = "Domande.csv";  //File assegnato a variabile
     $array = [];    //Iniziallizzazione di un array temporaneo
     do {
-        $numero_casuale = rand(1, count(file($filePath)));      //Il numero casuale viene scelto tra 1 e il numero di righe del CSV
+        $numero_casuale = rand(0, count(file($filePath)));      //Il numero casuale viene scelto tra 1 e il numero di righe del CSV
         if (!in_array($numero_casuale, $array)) {       //Se l'elemento non è presente nell'array temporaneo, allora inseriscilo nell'array. Serve per evitare doppioni di domande
             $array[] = $numero_casuale;                 //Inserimento valori nell'array
         }
